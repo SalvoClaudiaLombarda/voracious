@@ -3,7 +3,7 @@ import { Router,ActivatedRoute } from '@angular/router';
 import { FoodService } from '../../services/food.service';
 import { Observable } from 'rxjs';
 import "rxjs/add/operator/mergeMap";
-
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-food-details',
@@ -12,13 +12,13 @@ import "rxjs/add/operator/mergeMap";
 })
 export class FoodDetailsComponent implements OnInit {
 
-
+  BASE_URL:string=`${environment.BASE_URL}`
   food:any;
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    
+
     private foodService: FoodService)
     {}
 
@@ -32,9 +32,8 @@ export class FoodDetailsComponent implements OnInit {
 
 
       getFoodDetails(id) {
-        this.foodService.get(id)
+        this.foodService.getFood(id)
           .subscribe((food) => {
-            console.log(food)
             this.food = food;
           });
       }

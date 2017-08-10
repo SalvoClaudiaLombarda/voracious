@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { SessionService} from '../../services/session.service'
-
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-userprofile',
@@ -10,6 +10,8 @@ import { SessionService} from '../../services/session.service'
 })
 export class UserprofileComponent implements OnInit {
 user: any;
+BASE_URL:string=`${environment.BASE_URL}`
+
   constructor(private router: Router, private sessionService: SessionService) {
 
    }

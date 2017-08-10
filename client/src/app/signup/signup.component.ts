@@ -11,8 +11,9 @@ import $ from 'jquery';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  BASE_URL:string=`${environment.BASE_URL}/api/auth`;
   uploader: FileUploader = new FileUploader({
-    url: `http://localhost:3000/api/auth/signup`
+    url: `${this.BASE_URL}/signup`
    });
 
   error: string;

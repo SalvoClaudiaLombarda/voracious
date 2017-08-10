@@ -12,9 +12,9 @@ import $ from 'jquery';
   styleUrls: ['./new-food.component.css']
 })
 export class NewFoodComponent implements OnInit {
-
+  BASE_URL:string=`${environment.BASE_URL}/api/foods`;
   uploader: FileUploader = new FileUploader({
-    url: `http://localhost:3000/api/foods`
+    url: `${this.BASE_URL}`
   });
   error: string;
   foodName: string;

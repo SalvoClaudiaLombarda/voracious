@@ -52,7 +52,7 @@ const foodRoutes = require('./routes/foods');
 app.use('/api/auth', authRoutes);
 app.use('/api/foods', foodRoutes);
 
-app.use((req, res, next) => {
+app.use("/*" ,(req, res, next) => {
   res.sendfile(__dirname + '/public/index.html');
 });
 

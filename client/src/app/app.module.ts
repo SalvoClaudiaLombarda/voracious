@@ -15,7 +15,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { NewFoodComponent } from './new-food/new-food.component';
 import { FoodDetailsComponent } from './food-details/food-details.component';
-import { FileSelectDirective } from "ng2-file-upload";
+import { FileUploadModule } from "ng2-file-upload";
 import { FoodActivationService} from '../services/food-activation.service';
 import { UserprofileComponent } from './userprofile/userprofile.component'
 import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
@@ -34,13 +34,13 @@ import { FoodEditComponent } from './food-edit/food-edit.component';
     FoodListComponent,
     NewFoodComponent,
     FoodDetailsComponent,
-    FileSelectDirective,
     UserprofileComponent,
     FoodCategoryComponent,
     FoodEditComponent,
   ],
   imports: [
     BrowserModule,
+    FileUploadModule,
     FormsModule,
     MaterializeModule,
     HttpModule,

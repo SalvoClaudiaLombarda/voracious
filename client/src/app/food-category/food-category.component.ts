@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute } from '@angular/router';
 import { FoodService } from '../../services/food.service';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./food-category.component.css']
 })
 export class FoodCategoryComponent implements OnInit {
-
+  BASE_URL:string=`${environment.BASE_URL}`
   foods: Observable<Array<object>>;
 
   constructor(

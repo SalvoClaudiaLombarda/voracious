@@ -97,7 +97,7 @@ router.get('/:id', (req, res) => {
 
       theFood.populate('foodCreator', (err, foodOne) => {
           console.log(foodOne);
-          res.json(foodOne);
+          res.status(200).json(foodOne);
         });
       });
   });

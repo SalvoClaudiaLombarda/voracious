@@ -55,7 +55,7 @@ export class FoodService {
       .catch(this.handleError);
   }
 
-  get(id) {
+  getFood(id) {
     return this.http.get(`${this.BASE_URL}/${id}`)
       .map((res) => res.json())
 
