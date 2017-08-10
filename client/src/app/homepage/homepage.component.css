@@ -1,12 +1,3 @@
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
-}
 
 
 .searchbox {
@@ -21,6 +12,9 @@ main {
   margin-top:20px;
 }
 
+.header {
+  color: red;
+}
 .foodtitle h1, h5{
   text-align: center;
   color: white;
@@ -70,6 +64,7 @@ h2 {
 }
 
 
+
 .foodcategory {
   background-position: center center;
   background-repeat: no-repeat;
@@ -77,14 +72,7 @@ h2 {
   margin-left:2px;
 }
 
-footer {
-  text-align: center;
-}
 
-.page-footer {
-  background-color: #3949ab;
-  padding-top: 0;
-}
 .pizza {
 
     background-image: linear-gradient(
@@ -149,8 +137,20 @@ footer {
 }
 /*end modify*/
 
-
+.card-title h5 {
+  background: #bf2c2c;
+}
 
 .card-content span {
   margin-right:20px;
+}
+
+.card.horizontal .card-image {
+    max-width: 60%;
+}
+
+div.card.small.horizontal {
+
+width: 80%;
+margin-left: 10%;
 }

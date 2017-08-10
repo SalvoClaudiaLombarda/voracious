@@ -14,7 +14,7 @@ export class AppComponent {
   constructor(private session:SessionService){ }
 
 
-  ngOnInit() {      }
+  ngOnVIWInit() {      }
 
   logout(){
     this.session.logout().subscribe();

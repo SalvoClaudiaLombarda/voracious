@@ -5,7 +5,6 @@ import { FileUploader } from "ng2-file-upload";
 import {environment} from '../../environments/environment';
 import $ from 'jquery';
 
-
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -35,10 +34,6 @@ export class SignupComponent implements OnInit {
 
   constructor(private session: SessionService, private router: Router) { }
   ngOnInit() {
-    $('.datepicker').pickadate({
-   selectMonths: true,
-   selectYears: 10
- });
   }
 
 

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import "rxjs/add/operator/mergeMap";
 import $ from 'jquery'
 
+
 @Component({
   selector: 'app-food-edit',
   templateUrl: './food-edit.component.html',
@@ -46,7 +47,7 @@ export class FoodEditComponent implements OnInit {
     }
 
     editFood(id) {
-      this.foodService.edit(id)
+      this.foodService.get(id)
         .subscribe((food) => {
           this.food = food;
         });

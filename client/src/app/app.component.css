@@ -1,1 +1,47 @@
+nav ul a {
+  font-size: 1.3rem;
+}
 
+footer {
+  text-align: center;
+}
+
+.page-footer {
+  background-color: #3949ab;
+  padding-top: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.avatar {
+  margin-top: 15px;
+margin-right: 7px;
+border: 2px solid #CCC;
+}
+
+body  {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+min-height: 100vh;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+main  {
+-webkit-box-flex: 1;
+-webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+      }
