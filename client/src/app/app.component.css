@@ -26,8 +26,10 @@ main {
 margin-right: 7px;
 border: 2px solid #CCC;
 }
-.logo{
-  margin-left: 160px;
+.title-header{
+  font-family: 'Slackey', cursive;
+  font-size: 30px;
+  margin-left: 13%;
 }
 body  {
 display: -webkit-box;
