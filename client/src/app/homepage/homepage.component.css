@@ -150,7 +150,18 @@ h2 {
 }
 
 div.card.small.horizontal {
-
 width: 80%;
-margin-left: 10%;
+margin-left: 5%;
 }
+
+/*.truncate {
+  white-space: nowrap;
+
+}
+
+.truncate2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}*/

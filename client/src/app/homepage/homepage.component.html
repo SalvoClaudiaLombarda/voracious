@@ -78,10 +78,22 @@
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        <p>I am a very simple card. I am good at containing small bits of information.</p>
+        <span><strong>Category:</strong></span>
+        <span>{{product.foodCategory}}</span>
+        <br>
+        <br>
+        <span><strong>Rate:</strong></span>
+        <br>
+        <span>{{product.rate}}/5</span>
+        <br>
+        <br>
+        <span><strong>Price:</strong></span>
+        <br>
+        <span>€{{product.price}}</span>
+        <br>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
+        <a class="btn" [routerLink]="['/foods/', product._id]">Details</a>
       </div>
     </div>
   </div>
@@ -137,20 +149,3 @@
 
   </div>
 </div>
-<<<<<<< HEAD
-=======
-
-<footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l12 s12">
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      Copyright © 2017 Claudia Duarte & Salvatore Costanzo - Searchbar by: Miguel
-    </div>
-  </div>
-</footer>
->>>>>>> d369b9f0e2f7925b26bfc7a9cce67e88dbb1aade
