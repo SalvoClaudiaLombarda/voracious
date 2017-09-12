@@ -7,3 +7,33 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+
+
+.card .card-content {
+  height: 177px;
+}
+
+.row .col.s4 {
+  heigth: 532px;
+}
+/*.card .card-image img {
+max-height: 273px;
+    min-height: 273px;
+  }*/
+
+
+  h5 {
+    background: #bf2c2c;
+
+  }
+  .card .card-image img{
+    height: 100%;
+  }
+  .card-image{
+    height:250px;
+  }
+
+  .card .card-content p {
+      height: 70px;
+  }

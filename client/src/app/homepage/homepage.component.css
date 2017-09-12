@@ -83,12 +83,6 @@ h2 {
       ), url("../../assets/pizza.jpg");
 }
 
-.burger {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ), url("../../assets/Piquemacho.png");
-}
 
 .croquetas {
     background-image:
@@ -106,15 +100,33 @@ h2 {
 }
 
 .sushi {
-    background-image: url("../../assets/sushi.jpg");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url("../../assets/sushi.jpg");
 }
 
 .pique {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
-      ),url("../../assets/sushi.jpg");
+      ),url("../../assets/Piquemacho.png");
 }
+
+.mexicana {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url("../../assets/tacos.jpg");
+}
+
+.burger {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url("../../assets/burger.jpg");
+}
+
 
 
 .subtitle .card-panel{

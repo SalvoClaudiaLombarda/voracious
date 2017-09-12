@@ -54,3 +54,11 @@ background-repeat: no-repeat;
 border-radius: 10px;
 border-left: 10px solid #c52525;
 }
+
+.card .card-content {
+  height: 177px;
+}
+
+.row .col.s4 {
+  heigth: 532px;
+}

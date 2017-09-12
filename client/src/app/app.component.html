@@ -13,7 +13,7 @@
       <a *ngIf="user"> Hola {{ User.username }} </a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-          <li *ngIf="session.user && session.startLoginCompleted"><img class="circle responsive-img avatar" width="50px" [src]='"http://localhost:3000/"+session.user.avatarImage' /></li>
+          <li *ngIf="session.user && session.startLoginCompleted"><img class="circle responsive-img avatar" width="50px" [src]='BASE_URL + session.user.avatarImage' /></li>
         <li *ngIf="session.user && session.startLoginCompleted"><strong [routerLink]="['profile']"> Hello {{session.user.username}}</strong></li>
         <li *ngIf="!session.user && session.startLoginCompleted"><a [routerLink]="['signup']">
           <i class="material-icons left">border_color</i>Signup</a></li>

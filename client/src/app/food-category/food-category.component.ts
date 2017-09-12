@@ -13,6 +13,7 @@ import { environment } from '../../environments/environment';
 export class FoodCategoryComponent implements OnInit {
   BASE_URL:string=`${environment.BASE_URL}`
   foods: Observable<Array<object>>;
+  type:string;
 
   constructor(
     public route: ActivatedRoute,
@@ -23,6 +24,7 @@ export class FoodCategoryComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.getFoodCategory(params['foodCategory']);
+      this.type = params['foodCategory']
       console.log(params);
     });
   }
